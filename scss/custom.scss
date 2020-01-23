@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap');
+
+$main_fm: 'EB Garamond', serif;
+$nav_fm: 'Oswald', sans-serif;
+$bg_color: #ced4da;
+
+body {
+    background-color: $bg_color;
+    font-family: $main_fm;
+}
+
+.container {
+    margin-left: unset !important;
+}
+
+.container div * {
+    border: 1px solid black;
+    height: 50px;
+}
