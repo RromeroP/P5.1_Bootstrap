@@ -10775,7 +10775,55 @@ body {
 }
 
 .container div * {
-  border: 1px solid black;
-  height: 50px;
+  height: auto;
+}
+
+.nav {
+  background-color: #4e5944;
+}
+
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  color: #b8c6ac;
+}
+
+.nav-link:hover, .nav-link.active:hover {
+  color: #f9faff;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  color: #e9e9e9;
+}
+
+.nav-link.disabled {
+  color: #999baa !important;
+}
+
+.block_never {
+  background-color: #e9e9e9;
+}
+
+.block_never div h1 {
+  font-size: 1.5rem;
+}
+
+.block_never div img {
+  max-height: 320px;
+}
+
+.block_mane {
+  background-color: #e9e9e9;
+}
+
+.block_mane .col-md-4 {
+  border-left: 0.6px lightgray solid;
+}
+
+@media (max-width: 575.98px) {
+  .block_mane .col-md-4 {
+    border-left: none;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

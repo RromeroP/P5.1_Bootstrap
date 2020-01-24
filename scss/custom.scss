@@ -1,21 +1,71 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap");
 
-$main_fm: 'EB Garamond', serif;
-$nav_fm: 'Oswald', sans-serif;
+$main_fm: "EB Garamond", serif;
+$nav_fm: "Oswald", sans-serif;
 $bg_color: #ced4da;
+$dark_bg: #4e5944;
+$light_bg: #e9e9e9;
 
 body {
-    background-color: $bg_color;
-    font-family: $main_fm;
+  background-color: $bg_color;
+  font-family: $main_fm;
 }
 
 .container {
-    margin-left: unset !important;
+  margin-left: unset !important;
+
+  & div * {
+    height: auto;
+  }
 }
 
-.container div * {
-    border: 1px solid black;
-    height: 50px;
+.nav {
+  background-color: $dark_bg;
+}
+
+.nav-link {
+  font-family: $nav_fm;
+  text-decoration: underline;
+  color: #b8c6ac;
+
+  &:hover,
+  &.active:hover {
+    color: #f9faff;
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: #e9e9e9;
+  }
+
+  &.disabled {
+    color: #999baa !important;
+  }
+}
+
+.block_never {
+  background-color: $light_bg;
+
+  div h1 {
+    font-size: 1.5rem;
+  }
+  div img {
+    max-height: 320px;
+  }
+}
+
+.block_mane {
+  background-color: $light_bg;
+
+  .col-md-4 {
+    border-left: 0.6px lightgray solid;
+  }
+
+  @include media-breakpoint-down(xs) {
+    .col-md-4 {
+      border-left: none;
+    }
+  }
 }
