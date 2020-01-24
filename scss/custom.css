@@ -10826,4 +10826,14 @@ body {
     border-left: none;
   }
 }
+
+.block_cards div {
+  background-color: white;
+  width: 75%;
+}
+
+.block_footer {
+  background-color: #4e5944;
+  color: #b5c1aa;
+}
 /*# sourceMappingURL=custom.css.map */
